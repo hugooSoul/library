@@ -36,6 +36,7 @@ class BooksController < ApplicationController
 
     if @book.available = true
         @book.taken = ""
+        Message.create content: "#{@book.name} is available"
     end
 
     respond_to do |format|

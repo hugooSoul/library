@@ -139,6 +139,16 @@
   }
 }
 
+// Notifications
+
+.messages {
+  z-index: 9;
+  #messages {
+    width: 350px;
+    background-color: #ff5f2e;
+  }
+}
+
 @media (max-width: 768px) {
 
   .background {
