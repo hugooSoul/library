@@ -1,6 +1,8 @@
-<div class="messages">
-  <%= render @messages %>
-</div>
+<% if user_signed_in? %>
+  <div class="messages">
+    <%= render @messages %>
+  </div>
+<% end %>
 <div class="background">
   <div class="intro">
     <h1 class="text-center">Welcome to the Library</h1>
