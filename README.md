@@ -46,8 +46,17 @@ The user with Admin privileges is:
 * The Library is hosted in AWS (EC2)
 * Use postgres
 
+# P.S.
 
-#Specifications
+There is a class called Message that show the notification when a book is available again.
+This notification is visible to everyone if a user is signed in. This one appear just for 4s at the main page.
+
+For this feature I used ActionCable & Redis.
+This feature it's only available on **local environment**.
+If you clone this repository going to be capable to see it working.
+
+
+### Specifications
 
 * Ubuntu 16.04
 * ruby 2.3.0
