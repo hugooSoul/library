@@ -12,7 +12,7 @@ in this section you can be able to check what the category is about.
 
 ## Admin section
 
-In this section, the admin gonna be able to CRUD books, and also add new categories.
+In this section, the admin gonna be able to CRUD books, and also for categories.
 And also could change the status of the book to Available/Not Available with a simple click in the section that correspond.
 
 * Before to store a book on the DB, the admin must to have at least one Category.
@@ -22,10 +22,33 @@ And also could change the status of the book to Available/Not Available with a s
 
 ## Admin User for testing
 
+The user with Admin privileges is:
+
 * User: admin@maniak.com.mx
 * Password: admin123
+
+## Conditions
+
+* Book
+  * Name, author: Valid values without numbers
+
+* Category
+  * Name, author: Valid values without numbers
+
+* Users
+  * Name, Last Name: Valid values without numbers
+  * Email: Valid email
+
+> Even the letter "ñ" is not allowed
 
 ## Host
 
 * The Library is hosted in AWS (EC2)
 * Use postgres
+
+
+#Specifications
+
+* Ubuntu 16.04
+* ruby 2.3.0
+* rails 5.0.2
