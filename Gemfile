@@ -29,7 +29,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  
+
   gem 'capistrano',         require: false
   gem 'capistrano-rvm',     require: false
   gem 'capistrano-rails',   require: false
@@ -53,3 +53,4 @@ gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
 gem "font-awesome-rails"
 gem 'best_in_place', '~> 3.0.1'
 gem 'kaminari'
+gem 'pg'
