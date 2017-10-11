@@ -1,0 +1,151 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'bootstrap-datetimepicker';
+@import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
+@import "devise";
+@import "variables";
+
+.background {
+  background: image-url("intro.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+  .intro {
+    padding: 10%;
+    h1, h4 {
+      display: block;
+      margin: 0 auto;
+      color: $white;
+    }
+  }
+}
+
+.footer {
+  padding: 30px 0 0;
+  overflow: hidden;
+  background-color: $footer;
+  color: $white;
+}
+
+.search-face {
+  font-size: 5em;
+}
+
+.btn-book, .btn-category {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  color: $white;
+}
+
+.btn-book {
+  background-color: #30A9DE;
+  &:hover {
+    border: 1px solid #30A9DE;
+    background: transparent;
+  }
+}
+
+.btn-category {
+  background-color: #E53A40;
+  &:hover {
+    border: 1px solid #E53A40;
+    background: transparent;
+  }
+}
+
+.btn-take {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  background-color: #2E294E;
+  color: $white;
+  &:hover {
+    border: 1px solid #2E294E;
+    background: transparent;
+    color: #2E294E;
+  }
+}
+
+.notes {
+  color: #DE6449;
+  font-size: 13px;
+}
+
+.status_na {
+  color: #f9320c;
+}
+
+.status_a {
+  color: #519D9E;
+}
+
+.alert {
+  z-index: 9;
+}
+
+.panel {
+  a {
+    text-decoration: none;
+  }
+  .panel-footer  {
+    color: #8F2D56;
+  }
+}
+
+.cover_book {
+  width: 250px;
+}
+
+.show_book {
+  width: 350px;
+}
+
+.book_info {
+  padding: 30px;
+  .book_name {
+    font-size: 40px;
+  }
+  .author {
+    font-size: 18px;
+    color: #274c5e;
+  }
+  .category {
+    font-size: 16px;
+    color: #77919d;
+  }
+  .date {
+    font-size: 12px;
+    color: #7f9eb2;
+  }
+}
+
+.book {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  font-size: 18px;
+  .page {
+    color: #2E294E;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .background {
+    height: 250px;
+    .intro {
+      padding: 20%;
+    }
+  }
+
+}

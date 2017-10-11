@@ -1,0 +1,35 @@
+<table class="table table-bordered table-responsive">
+
+  <tr class="active">
+    <th>ID</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Category</th>
+    <th>Published date</th>
+    <th>Available</th>
+    <th>Actions</th>
+  </tr>
+
+  <% @books.each do |book| %>
+    <tr>
+      <td><%= book.id %></td>
+      <td><%= book.name %></td>
+      <td><%= book.author %></td>
+      <td><%= book.try(:category) %></td>
+      <td><%= book.published_date.strftime("%b %d, %Y") %></td>
+      <% if can? :manage, book %>
+        <td><%= best_in_place book, :available, :as => :select, :collection => [[true, 'Available'], [false, 'No available']], :place_holder => "Available" %></td>
+      <% end %>
+      <td>
+        <%= link_to edit_book_path(book) do %>
+          <i class="fa fa-pencil">edit</i>
+        <% end %>
+        <%= link_to book_path(book), method: :delete, data: {confirm: "Are you sure?"}  do %>
+          <i class="fa fa-times">delete</i>
+        <% end %>
+      </td>
+    </tr>
+
+  <% end %>
+
+</table>

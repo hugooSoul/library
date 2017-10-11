@@ -1,0 +1,12 @@
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" >
+
+  <div class="panel panel-default">
+    <%= link_to book_path(book) do %>
+      <div class="panel-body">
+        <%= image_tag("cover.jpg", class: "cover_book") %>
+      </div>
+      <div class="panel-footer"><%= book.name %></div>
+    <% end %>
+  </div>
+
+</div>

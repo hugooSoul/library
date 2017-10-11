@@ -1,0 +1,32 @@
+<div class="background">
+  <div class="intro">
+    <h1 class="text-center">Welcome to the Library</h1>
+    <h4 class="text-center">Evertything you want is here!!!</h4>
+  </div>
+</div>
+
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="container">
+    <% if @books.any? %>
+      <br><br>
+      <div>
+        <%= render(partial: 'books/book', collection: @books) %>
+      </div>
+
+
+      <% unless @books.current_page == @books.total_pages %>
+        <div class="col-sm-12 col-xs-12 text-center">
+          <%= paginate @books, class: "pagination" %>
+        </div>
+      <% end %>
+    <% else %>
+      <p class='search-face'>:(</p>
+      <h3>There's not any book by the moment</h3>
+      <p>Come back later & you'll find awesome titles here.</p>
+      <p>We're working for you.</p>
+    <% end %>
+  </div>
+</div>
+
+<%= render 'layouts/footer' %>

@@ -1,0 +1,33 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="container">
+    <div class="row book">
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <%= image_tag("cover.jpg", class: "show_book") %>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+      <div class="book_info">
+        <h2 class="book_name"><%= @book.name %></h2>
+
+        <p class="author"><%= @book.author %></p>
+
+        <p class="category"><%= @book.try(:category) %></p>
+
+        <p class="date"><%= @book.published_date.strftime("%b %d, %Y") %></p>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <label for="">This book is: <%= status(@book.available) %></label>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <%= link_to "Take book", "", class: "btn btn-md btn-take" %>
+      </div>
+
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<%= render 'layouts/footer' %>
