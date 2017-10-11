@@ -22,10 +22,12 @@ And also could change the status of the book to Available/Not Available with a s
 
 ## Admin User for testing
 
-The user with Admin privileges is:
+If you a testing it in the link above (Amazon), the user with Admin privileges is:
 
 * User: admin@maniak.com.mx
 * Password: admin123
+
+If you are testing it in a local environment, you should have to set the admin flag (of the user you want) as True.
 
 ## Conditions
 
