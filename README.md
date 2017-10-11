@@ -6,6 +6,10 @@ First at all, you need to be registered before to any action.
 How this Library going to store a lot of book, it has a pagination,
 each page display 5 books.
 
+There are some Categories that the Admin going to create,
+in this section you can be able to check what the category is about.
+
+
 ## Admin section
 
 In this section, the admin gonna be able to CRUD books, and also add new categories.
@@ -18,5 +22,5 @@ And also could change the status of the book to Available/Not Available with a s
 
 ## Admin User for testing
 
-* User:
-* Password: 
+* User: admin@maniak.com.mx
+* Password: admin123
