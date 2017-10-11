@@ -1,9 +1,13 @@
 class CategoriesController < ApplicationController
 
-  before_action :authenticate_user!, except: [:show]
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_category, only: [:show, :edit, :update, :destroy]
-  before_action :category_params, except: [:new, :create]
-  before_action :is_admin?
+  before_action :category_params, except: [:index, :new, :create, :show]
+  before_action :is_admin?, except: [:index, :show]
+
+  def index
+    @categories = Category.all
+  end
 
   def new
     @category = Category.new
@@ -24,10 +28,6 @@ class CategoriesController < ApplicationController
   end
 
   def show
-  end
-
-  def method_name
-
   end
 
 

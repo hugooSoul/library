@@ -7,6 +7,7 @@
     <th>Category</th>
     <th>Published date</th>
     <th>Available</th>
+    <th>Taken by</th>
     <th>Actions</th>
   </tr>
 
@@ -19,6 +20,13 @@
       <td><%= book.published_date.strftime("%b %d, %Y") %></td>
       <% if can? :manage, book %>
         <td><%= best_in_place book, :available, :as => :select, :collection => [[true, 'Available'], [false, 'No available']], :place_holder => "Available" %></td>
+      <% end %>
+      <% if book.taken != "" %>
+      <td>
+        <%= User.find(book.taken).name + " " + User.find(book.taken).last_name %>
+      </td>
+      <% else %>
+      <td></td>
       <% end %>
       <td>
         <%= link_to edit_book_path(book) do %>

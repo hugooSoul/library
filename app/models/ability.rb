@@ -7,6 +7,7 @@ class Ability
       can :manage, :all
     elsif
       can :manage, User
+      can :update, Book
     end
 
   end

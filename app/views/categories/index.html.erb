@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+
+    <% if @categories.exists? %>
+      <div class="list-group">
+        <% @categories.each do |c| %>
+          <button type="button" class="list-group-item">
+            <%= link_to c.name, category_path(c) %>
+          </button>
+        <% end %>
+      </div>
+    <% else %>
+      <p class='search-face'>:(</p>
+      <h3>There's not any category by the moment.</h3>
+    <% end %>
+
+  </div>
+</div>

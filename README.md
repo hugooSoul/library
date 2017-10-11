@@ -14,3 +14,9 @@ And also could change the status of the book to Available/Not Available with a s
 * Before to store a book on the DB, the admin must to have at least one Category.
 * if there aren't any book a text going to be displayed.
 * If there are one book at least, the info gonna be shown in a table.
+
+
+## Admin User for testing
+
+* User:
+* Password: 
