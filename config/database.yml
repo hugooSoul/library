@@ -23,9 +23,9 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  database: maniakRoot
+  database: maniak
   username: postgres
-  password: ytproot
+  password: maniakRoot
   min_messages: warning
   pool: 5
   timeout: 5000
