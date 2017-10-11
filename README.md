@@ -24,3 +24,8 @@ And also could change the status of the book to Available/Not Available with a s
 
 * User: admin@maniak.com.mx
 * Password: admin123
+
+## Host
+
+* The Library is hosted in AWS (EC2)
+* Use postgres
