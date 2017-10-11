@@ -54,3 +54,4 @@ gem "font-awesome-rails"
 gem 'best_in_place', '~> 3.0.1'
 gem 'kaminari'
 gem 'pg'
+gem 'dotenv-rails', :groups => [:development, :production]
