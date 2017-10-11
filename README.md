@@ -12,7 +12,7 @@ in this section you can be able to check what the category is about.
 
 ## Admin section
 
-In this section, the admin gonna be able to CRUD books, and also for categories.
+In this section, the admin gonna be able to CRUD books, and also for categories, and is capable to delete any user.
 And also could change the status of the book to Available/Not Available with a simple click in the section that correspond.
 
 * Before to store a book on the DB, the admin must to have at least one Category.

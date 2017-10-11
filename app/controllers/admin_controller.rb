@@ -8,6 +8,10 @@ class AdminController < ApplicationController
     @books = Book.all.order("created_at DESC")
   end
 
+  def show_users
+    @users = User.order("created_at DESC")
+  end
+
   private
 
   def is_admin?

@@ -7,9 +7,14 @@ Rails.application.routes.draw do
     :registrations => "users/registrations"
   }
 
+  match 'users/:id' => 'users#destroy', :via => :delete, :as => :admin_destroy_user
+
   resources :books
 
   resources :admin, only: [:index]
 
   resources :categories
+  get 'categories_admin', :to => 'categories#home', :as => :admin_category
+  get 'users_admin', :to => 'admin#show_users', :as => :admin_users
+
 end
