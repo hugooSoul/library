@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   get 'categories_admin', :to => 'categories#home', :as => :admin_category
   get 'users_admin', :to => 'admin#show_users', :as => :admin_users
 
+  mount ActionCable.server => '/cable'
+
 end
